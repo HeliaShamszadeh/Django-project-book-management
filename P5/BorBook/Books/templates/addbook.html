@@ -1,0 +1,107 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <title>افزودن کتاب</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-center {
+    display:flex;
+    justify-content: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(211, 183, 58);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f3a0;
+    padding: 30px;
+    width: 50%
+}
+
+body {
+    background-image: url('https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-12-14-bookshelf-shutterstock.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+</style>
+<pre>                                                   </pre>
+
+<body>
+    
+    <center>
+        <pre>                                                                                                   </pre>
+    <form  action="/addbook/" method="post">{% csrf_token %}
+        <pre>                                                     </pre>
+        <div style = "text-align:right" class=form-group>
+        <pre>                                                       </pre>
+        <h1 style="color: #644f09 ;font-size: 50px; text-align:center"> فرم افزودن کتاب</h1>
+        <pre>                                                     </pre>
+            <label for="bname">نام کتاب:</label><br>
+            <input class="form-control" type="text" id="bname" name="bname"><br>
+        <!-- </div>
+        <div style = "text-align:right" class=form-group> -->
+            <label for="Aname">نام نویسنده:</label><br>
+            <input class="form-control" type="text" id="Aname" name="Aname"> 
+        <!-- </div>
+        <div style = "text-align:right" class=form-group> --> 
+            <label for="Oname">نام دارنده:</label><br>
+            <input class="form-control" type="text" id="Oname" name="Oname">
+        <!-- </div>
+        <div style = "text-align:right" class=form-group> -->
+            <label for="city">شهر:</label><br>
+            <input class="form-control" type="text" id="city" name="city">
+            <label for=" contactinfo">ایمیل:</label></br>
+            <input class="form-control" type="text" id="contactinfo" name="contactinfo">
+        <!-- </div>
+        <div style = "text-align:right" class=form-group> -->
+        <!-- </div>
+        <div style = "text-align:right" class=form-group> -->
+            <label for="descripton">دربارۀ کتاب:</label><br>
+            <textarea class="form-control" name="description" id="description" rows="5"></textarea>
+            <center>
+                <pre>                                 </pre>
+            <button style = "text-align:center" type="submit" class="btn btn-primary">ثبت</button>
+        
+        </center>
+    </div>
+
+    </form>
+</center>
+<center>
+    <form method="get" action="/index">
+        <button type="botton" class="btn btn-warning" style=" font-size: larger;color: brown ; text-align: center"
+            onclick="window.location='http://127.0.0.1:8000/index/';">صفحۀ قبل</button>
+    </form> 
+</center> 
+</body>
+<pre>                                                     </pre>
+</html>
